@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2764A9129C25F420043AEF6 /* TinyTriviaAI Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D2764A9029C25F420043AEF6 /* TinyTriviaAI Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2764A9629C25F420043AEF6 /* TinyTriviaAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2764A9529C25F420043AEF6 /* TinyTriviaAIApp.swift */; };
+		D2764A9829C25F420043AEF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2764A9729C25F420043AEF6 /* ContentView.swift */; };
+		D2764A9A29C25F430043AEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2764A9929C25F430043AEF6 /* Assets.xcassets */; };
+		D2764A9D29C25F430043AEF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2764A9C29C25F430043AEF6 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2764A9229C25F420043AEF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2764A8429C25F420043AEF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2764A8F29C25F420043AEF6;
+			remoteInfo = "TinyTriviaAI Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2764AA329C25F430043AEF6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D2764A9129C25F420043AEF6 /* TinyTriviaAI Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D2764A8A29C25F420043AEF6 /* TinyTriviaAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyTriviaAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2764A9029C25F420043AEF6 /* TinyTriviaAI Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TinyTriviaAI Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2764A9529C25F420043AEF6 /* TinyTriviaAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyTriviaAIApp.swift; sourceTree = "<group>"; };
+		D2764A9729C25F420043AEF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D2764A9929C25F430043AEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2764A9C29C25F430043AEF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2764A8D29C25F420043AEF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2764A8329C25F420043AEF6 = {
+			isa = PBXGroup;
+			children = (
+				D2764A9429C25F420043AEF6 /* TinyTriviaAI Watch App */,
+				D2764A8B29C25F420043AEF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2764A8B29C25F420043AEF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2764A8A29C25F420043AEF6 /* TinyTriviaAI.app */,
+				D2764A9029C25F420043AEF6 /* TinyTriviaAI Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2764A9429C25F420043AEF6 /* TinyTriviaAI Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D2764A9529C25F420043AEF6 /* TinyTriviaAIApp.swift */,
+				D2764A9729C25F420043AEF6 /* ContentView.swift */,
+				D2764A9929C25F430043AEF6 /* Assets.xcassets */,
+				D2764A9B29C25F430043AEF6 /* Preview Content */,
+			);
+			path = "TinyTriviaAI Watch App";
+			sourceTree = "<group>";
+		};
+		D2764A9B29C25F430043AEF6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D2764A9C29C25F430043AEF6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2764A8929C25F420043AEF6 /* TinyTriviaAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2764AA429C25F430043AEF6 /* Build configuration list for PBXNativeTarget "TinyTriviaAI" */;
+			buildPhases = (
+				D2764A8829C25F420043AEF6 /* Resources */,
+				D2764AA329C25F430043AEF6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2764A9329C25F420043AEF6 /* PBXTargetDependency */,
+			);
+			name = TinyTriviaAI;
+			productName = TinyTriviaAI;
+			productReference = D2764A8A29C25F420043AEF6 /* TinyTriviaAI.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D2764A8F29C25F420043AEF6 /* TinyTriviaAI Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2764AA029C25F430043AEF6 /* Build configuration list for PBXNativeTarget "TinyTriviaAI Watch App" */;
+			buildPhases = (
+				D2764A8C29C25F420043AEF6 /* Sources */,
+				D2764A8D29C25F420043AEF6 /* Frameworks */,
+				D2764A8E29C25F420043AEF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TinyTriviaAI Watch App";
+			productName = "TinyTriviaAI Watch App";
+			productReference = D2764A9029C25F420043AEF6 /* TinyTriviaAI Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2764A8429C25F420043AEF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D2764A8929C25F420043AEF6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D2764A8F29C25F420043AEF6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D2764A8729C25F420043AEF6 /* Build configuration list for PBXProject "TinyTriviaAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2764A8329C25F420043AEF6;
+			productRefGroup = D2764A8B29C25F420043AEF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2764A8929C25F420043AEF6 /* TinyTriviaAI */,
+				D2764A8F29C25F420043AEF6 /* TinyTriviaAI Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2764A8829C25F420043AEF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2764A8E29C25F420043AEF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2764A9D29C25F430043AEF6 /* Preview Assets.xcassets in Resources */,
+				D2764A9A29C25F430043AEF6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2764A8C29C25F420043AEF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2764A9829C25F420043AEF6 /* ContentView.swift in Sources */,
+				D2764A9629C25F420043AEF6 /* TinyTriviaAIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2764A9329C25F420043AEF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2764A8F29C25F420043AEF6 /* TinyTriviaAI Watch App */;
+			targetProxy = D2764A9229C25F420043AEF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D2764A9E29C25F430043AEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2764A9F29C25F430043AEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D2764AA129C25F430043AEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TinyTriviaAI Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TinyTriviaAI;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naturallyinviting.TinyTriviaAI.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		D2764AA229C25F430043AEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TinyTriviaAI Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TinyTriviaAI;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naturallyinviting.TinyTriviaAI.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		D2764AA529C25F430043AEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				INFOPLIST_KEY_CFBundleDisplayName = TinyTriviaAI;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naturallyinviting.TinyTriviaAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D2764AA629C25F430043AEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97855WC2LR;
+				INFOPLIST_KEY_CFBundleDisplayName = TinyTriviaAI;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naturallyinviting.TinyTriviaAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2764A8729C25F420043AEF6 /* Build configuration list for PBXProject "TinyTriviaAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2764A9E29C25F430043AEF6 /* Debug */,
+				D2764A9F29C25F430043AEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2764AA029C25F430043AEF6 /* Build configuration list for PBXNativeTarget "TinyTriviaAI Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2764AA129C25F430043AEF6 /* Debug */,
+				D2764AA229C25F430043AEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2764AA429C25F430043AEF6 /* Build configuration list for PBXNativeTarget "TinyTriviaAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2764AA529C25F430043AEF6 /* Debug */,
+				D2764AA629C25F430043AEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2764A8429C25F420043AEF6 /* Project object */;
+}
