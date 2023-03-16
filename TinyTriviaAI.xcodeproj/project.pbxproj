@@ -12,6 +12,7 @@
 		D2764A9829C25F420043AEF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2764A9729C25F420043AEF6 /* ContentView.swift */; };
 		D2764A9A29C25F430043AEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2764A9929C25F430043AEF6 /* Assets.xcassets */; };
 		D2764A9D29C25F430043AEF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2764A9C29C25F430043AEF6 /* Preview Assets.xcassets */; };
+		D2764AA929C25F940043AEF6 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = D2764AA829C25F940043AEF6 /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2764AA929C25F940043AEF6 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +129,9 @@
 			dependencies = (
 			);
 			name = "TinyTriviaAI Watch App";
+			packageProductDependencies = (
+				D2764AA829C25F940043AEF6 /* OpenAISwift */,
+			);
 			productName = "TinyTriviaAI Watch App";
 			productReference = D2764A9029C25F420043AEF6 /* TinyTriviaAI Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +163,9 @@
 				Base,
 			);
 			mainGroup = D2764A8329C25F420043AEF6;
+			packageReferences = (
+				D2764AA729C25F940043AEF6 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = D2764A8B29C25F420043AEF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -442,6 +450,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2764AA729C25F940043AEF6 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Naturally-Inviting/OpenAISwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2764AA829C25F940043AEF6 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2764AA729C25F940043AEF6 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2764A8429C25F420043AEF6 /* Project object */;
 }

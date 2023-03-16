@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "openaiswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Naturally-Inviting/OpenAISwift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d04f058be42fe5b9c8e4baf3ff437e82b9797e12"
+      }
+    }
+  ],
+  "version" : 2
+}
