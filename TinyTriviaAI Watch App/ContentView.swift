@@ -22,8 +22,26 @@ class Requester: ObservableObject {
     @Published var isAnswerStatusPresented: Bool = false
     @Published var answerStatus = ""
     @Published var answerOptions: [String] = []
-
     @Published var topic: String = "Ancient History"
+
+    @Published var difficulty: String = "Intermediate"
+
+    var difficultyOptions: [String] {
+        ["Easy", "Intermediate", "Hard"]
+    }
+
+    var difficultyPrompt: (String, String) -> String = { difficulty, topic in
+        switch difficulty {
+        case "Easy":
+            return "generally easy"
+        case "Intermediate":
+            return "moderately difficule"
+        case "Hard":
+            return "extremly hard"
+        default:
+            return "Easy"
+        }
+    }
 
     var options: [String] {
         ["Ancient History", "The Solar System", "Famous Paintings", "World History", "Animal Kingdom", "Sports Records", "Famous Authors", "Musical Instruments", "Movie Quotes", "Geography", "Pop Culture"]
@@ -35,8 +53,8 @@ class Requester: ObservableObject {
         let openAI = OpenAISwift(authToken: "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")
         let req = try await openAI.sendChat(
             with: [
-                .init(role: .system, content: "You are a trivia host asking questions about US History."),
-                .init(role: .user, content: "Generate 1 extremly difficult trivia question about \(topic) with the questions and answers as well as 3 false answers. The question should be very obscure and unknown. The questions and answers should be fairly short no more than 10 words. The response should be formatted as JSON. The json should be structured as such: {\"question\": \"\",\n  \"answer\": \"\",\n  \"false_answers\": [\"\"]}")
+//                .init(role: .system, content: "You are a trivia host asking questions about \(topic)."),
+                .init(role: .user, content: "You are a trivia host asking questions about \(topic). Generate 1 \(difficultyPrompt(difficulty, topic)) trivia question about \(topic) with the question and answers as well as 3 false answers. The question should be very obscure and unknown. The questions and answers should be fairly short no more than 10 words. The response should be formatted as JSON. The json should be structured as such: {\"question\": \"\",\n  \"answer\": \"\",\n  \"false_answers\": [\"\"]}")
             ],
             model: .chat(.chatgpt),
             maxTokens: 600
@@ -44,6 +62,7 @@ class Requester: ObservableObject {
 
         isLoading = false
         let response = req.choices.first?.message.content ?? ""
+        print(response)
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
 
@@ -116,6 +135,12 @@ struct ContentView: View {
                 }
                 .pickerStyle(NavigationLinkPickerStyle())
 
+                Picker("Difficulty", selection: $viewModel.difficulty) {
+                    ForEach(viewModel.difficultyOptions, id: \.self) { option in
+                        Text(option.capitalized).tag(option)
+                    }
+                }
+                .pickerStyle(NavigationLinkPickerStyle())
                 Spacer()
 
                 Button(
