@@ -53,7 +53,6 @@ class Requester: ObservableObject {
         let openAI = OpenAISwift(authToken: "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")
         let req = try await openAI.sendChat(
             with: [
-//                .init(role: .system, content: "You are a trivia host asking questions about \(topic)."),
                 .init(role: .user, content: "You are a trivia host asking questions about \(topic). Generate 1 \(difficultyPrompt(difficulty, topic)) trivia question about \(topic) with the question and answers as well as 3 false answers. The question should be very obscure and unknown. The questions and answers should be fairly short no more than 10 words. The response should be formatted as JSON. The json should be structured as such: {\"question\": \"\",\n  \"answer\": \"\",\n  \"false_answers\": [\"\"]}")
             ],
             model: .chat(.chatgpt),
